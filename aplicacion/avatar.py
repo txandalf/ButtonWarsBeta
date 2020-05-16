@@ -7,7 +7,7 @@ import os
 
 PWD = os.path.abspath(os.curdir)
 
-avatars = os.listdir(PWD + r"\aplicacion\static\avatars")
+avatars = os.listdir(PWD + r"/aplicacion/static/avatars")
 avatars.remove("default_avatar.png")
 
 # Los ficheros cuyo nombre empieza por '1...'
