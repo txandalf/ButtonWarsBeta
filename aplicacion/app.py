@@ -129,7 +129,7 @@ def register():
             user.admin = False
             db.session.add(user)
             db.session.commit()
-
+            login_user(user)
             return redirect(url_for('inicio'))
         form.username.errors.append("Nombre de usuario pillado, te jodes.")
     return render_template("register.html", form=form)
